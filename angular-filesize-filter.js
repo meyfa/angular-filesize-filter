@@ -1,6 +1,7 @@
 /*global angular */
 
 (function (angular) {
+    "use strict";
 
     // -- MODULE DECLARATION
     angular.module("ngFilesizeFilter", [])
