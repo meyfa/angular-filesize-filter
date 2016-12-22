@@ -15,13 +15,18 @@
 
         return function(bytes, precision) {
 
-            if (isNaN(parseFloat(bytes)))
+            // validate 'bytes'
+            if (isNaN(parseFloat(bytes))) {
                 return "-";
-            if (isNaN(precision))
-                precision = 1;
-
-            if (bytes < 1)
+            }
+            if (bytes < 1) {
                 return "0 B";
+            }
+
+            // validate 'precision'
+            if (isNaN(precision)) {
+                precision = 1;
+            }
 
             var unitIndex = Math.floor(Math.log(bytes) / Math.log(1000)),
                 value = bytes / Math.pow(1000, unitIndex);
