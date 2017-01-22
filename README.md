@@ -11,6 +11,8 @@ file size strings with units.
 npm install --save angular-filesize-filter
 ```
 
+... and add it to your page via a `<script>` tag, or include it in your build process.
+
 
 
 ## Usage
