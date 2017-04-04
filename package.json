@@ -2,6 +2,7 @@
   "name": "angular-filesize-filter",
   "version": "0.1.1",
   "description": "Format byte counts as file size strings with the appropriate unit",
+  "main": "angular-filesize-filter.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JangoBrick/angular-filesize-filter.git"
